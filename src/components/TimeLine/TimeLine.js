@@ -67,10 +67,10 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        As a full stack developer, I offer end-to-end web development services,
+        As a frontend developer, I offer end-to-end web development services,
         proficient in both front-end and back-end technologies. My expertise
-        includes designing user interfaces, implementing server-side logic,
-        managing databases, and ensuring seamless functionality across the
+        includes designing user interfaces, implementing server-side logic
+        and ensuring seamless functionality across the
         entire web application. Additionally, I excel in troubleshooting and
         optimizing both client and server-side components for a comprehensive
         development experience..

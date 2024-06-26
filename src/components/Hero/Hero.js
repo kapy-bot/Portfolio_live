@@ -17,9 +17,11 @@ const Hero = (props) => (
           My Personal Portfolio
         </SectionTitle>
         <SectionText>
-        Hi, I’m kalpana and I am creative Full stack developer who dream making the world better place by creating captivating products.
+          Hi, I’m Kalpana and I am a creative Frontend developer who dreams of making the world a better place by creating captivating products.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button onClick={() => window.location.href = 'https://www.linkedin.com/in/kalpana-chaudhary-00a8762a8/'}>
+          Learn More
+        </Button>
       </LeftSection>
     </Section>
   </>

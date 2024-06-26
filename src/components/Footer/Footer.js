@@ -18,6 +18,7 @@ const Footer = () => {
             tanwarkalpna@gmail.com
           </LinkItem>
         </LinkColumn>
+        
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
