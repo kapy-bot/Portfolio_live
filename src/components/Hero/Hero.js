@@ -2,11 +2,10 @@ import React from "react";
 
 import {
   Section,
-  SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { Description, LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
   <>
@@ -16,10 +15,12 @@ const Hero = (props) => (
           Welcome To <br />
           My Personal Portfolio
         </SectionTitle>
-        <SectionText>
-          Hi, I’m Kalpana and I am a creative Frontend developer who dreams of making the world a better place by creating captivating products.
-        </SectionText>
-        <Button onClick={() => window.location.href = 'https://www.linkedin.com/in/kalpana-chaudhary-00a8762a8/'}>
+        <Description>
+          Hi, I’m Kalpana, a Full-Stack Developer and AI Engineer. I turn complex ideas into practical products, ranging from modern digital platforms to intelligent systems that solve real-world challenges.
+I enjoy working on projects where technology, creativity, and problem-solving come together to create meaningful impact.
+        </Description>
+
+        <Button onClick={() => window.location.href = 'www.linkedin.com/in/kalpana-c-00a8762a8'}>
           Learn More
         </Button>
       </LeftSection>

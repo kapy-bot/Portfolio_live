@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
@@ -46,9 +47,9 @@ export const Div3 = styled.div`
 `;
 
 // Navigation Links
-export const NavLink = styled.a`
-  font-size: 2rem;
-  line-height: 32px;
+export const NavLink = styled(Link)`
+  font-size: 1.6rem;
+  line-height: 28px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
@@ -67,9 +68,9 @@ export const ContactDropDown = styled.button`
   display: flex;
   position: relative;
   background: none;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 
-  line-height: 32px;
+  line-height: 28px;
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   transition: 0.3s ease;
@@ -116,9 +117,9 @@ color: white;
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
+    background-color: #2A2118;
     transform: scale(1.2);
     cursor: pointer;
-    
+
   }
 `

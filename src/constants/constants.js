@@ -38,9 +38,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2020, text: 'Started my journey', },
-  { year: 2021, text: 'Worked as a freelancer developer', },
-  { year: 2022, text: 'Started building websites', },
-  { year: 2023, text: 'Completed Full Stack Developer certification', },
-  { year: 2024, text: 'Learning never stopped', },
+{ year: 2021, text: 'Started freelance software development' },
+{ year: 2022, text: 'Built web and full-stack applications' },
+{ year: 2023, text: 'Expanded skills in modern software development' },
+{ year: 2024, text: 'Developed healthcare software and AI solutions' },
+{ year: 2025, text: 'Built AI-based medical imaging pipelines' },
+{ year: 2026, text: 'Continued developing AI and software solutions' } 
 ];

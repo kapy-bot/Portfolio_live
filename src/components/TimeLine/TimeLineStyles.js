@@ -1,9 +1,24 @@
 
 import styled from 'styled-components'
 
+import { SectionText } from '../../styles/GlobalComponents';
+
+export const Description = styled(SectionText)`
+  max-width: 100%;
+  font-size: 16px;
+
+  @media ${props => props.theme.breakpoints.md} {
+    font-size: 14px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: 12px;
+  }
+`;
+
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
-  background: #0F1624;
+  background: #15110D;
   padding: 0rem;
   list-style:none;
   display: flex;
@@ -40,7 +55,7 @@ export const CarouselMobileScrollNode = styled.div`
 `
 
 export const CarouselItem = styled.div`
-  background: #0F1624;
+  background: #15110D;
   border-radius: 3px;
   max-width: 196px;
 
@@ -51,7 +66,7 @@ export const CarouselItem = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: #0E131F;
+    background: #1A140F;
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;
@@ -66,8 +81,8 @@ export const CarouselItem = styled.div`
 
 export const CarouselItemTitle = styled.h4`
   font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 25px;
   letter-spacing: 0.02em;
   display: flex;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
@@ -77,14 +92,14 @@ export const CarouselItemTitle = styled.h4`
   margin-bottom: 8px;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 22px;
     margin-bottom: 4px;
   }
-  
+
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 18px;
   }
 `
 export const CarouselItemImg = styled.svg`
@@ -100,8 +115,8 @@ export const CarouselItemImg = styled.svg`
 `
 
 export const CarouselItemText = styled.p`
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 20px;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
   padding-right: 16px;

@@ -10,11 +10,11 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
+  Description,
 } from "./TimeLineStyles";
 import {
   Section,
   SectionDivider,
-  SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
@@ -66,15 +66,12 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-        As a frontend developer, I offer end-to-end web development services,
-        proficient in both front-end and back-end technologies. My expertise
-        includes designing user interfaces, implementing server-side logic
-        and ensuring seamless functionality across the
-        entire web application. Additionally, I excel in troubleshooting and
-        optimizing both client and server-side components for a comprehensive
-        development experience..
-      </SectionText>
+      <Description>
+         My recent work focuses on medical imaging and AI, where I researched and implemented state-of-the-art 2D segmentation algorithms and developed a 3D segmentation pipeline.
+          I integrated the solution into a Dockerized service using Flask, and applied healthcare interoperability standards like FHIR. This work contributed to ongoing research publications.
+        <br /><br />
+        Beyond that, I've built end-to-end web applications — handling everything from API integration to cloud deployment — with a focus on performance, scalability, and usability.
+      </Description>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

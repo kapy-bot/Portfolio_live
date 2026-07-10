@@ -4,16 +4,21 @@ export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
-  margin: 0 auto;
+  margin: 0 auto 72px;
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
+    margin-bottom: 52px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -21,13 +26,14 @@ export const Section = styled.section`
 
     width: calc(100vw - 32px);
     flex-direction: column;
+    margin-bottom: 36px;
   }
 `
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-size: ${(props) => props.main ? '65px' : '56px'};
-  line-height: ${(props) => props.main ? '72px' : '56px'};
+  font-size: ${(props) => props.main ? '44px' : '38px'};
+  line-height: ${(props) => props.main ? '50px' : '42px'};
   width: max-content;
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
@@ -37,17 +43,15 @@ export const SectionTitle = styled.h2`
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
 
   @media ${props => props.theme.breakpoints.md}{
-    font-size: ${(props) => props.main ? '56px' : '48px'};
-    line-height: ${(props) => props.main ? '56px' : '48px'};
+    font-size: ${(props) => props.main ? '38px' : '34px'};
+    line-height: ${(props) => props.main ? '42px' : '38px'};
     margin-bottom: 12px;
     padding: ${(props) => props.main ? '40px 0 12px' : '0'};
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    font-size: 32px;
-    line-height: 40px;
-    font-size: ${(props) => props.main ? '28px' : '32px'};
-    line-height: ${(props) => props.main ? '32px' : '40px'};
+    font-size: ${(props) => props.main ? '19px' : '21px'};
+    line-height: ${(props) => props.main ? '23px' : '26px'};
     margin-bottom: 8px;
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
     max-width: 100%;
@@ -56,22 +60,22 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 17px;
+  line-height: 29px;
   font-weight: 300;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 25px;
     padding-bottom: 24px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 20px;
     padding-bottom: 16px;
   }
 `
@@ -82,9 +86,9 @@ export const SectionDivider = styled.div`
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
-  background: ${(props) => props.colorAlt ? 
-    'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
-    'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background: ${(props) => props.colorAlt ?
+    'linear-gradient(270deg, #D65F42 0%, #F0A93B 100%)' :
+    'linear-gradient(270deg, #F0A93B 0%, #D65F42 100%)'};
 
     margin: ${(props) => props.divider ? "4rem 0" : "" };
 
@@ -101,19 +105,19 @@ export const SectionDivider = styled.div`
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 28px;
   color: rgba(255, 255, 255, 0.75);
 
 @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 19px;
   }
 `
 export const SecondaryBtn = styled.button`
@@ -124,7 +128,7 @@ export const SecondaryBtn = styled.button`
   border-radius: 999px;
   padding: 16px 24px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 16px;
   width: fit-content;
   margin-top: 32px;
@@ -152,8 +156,8 @@ export const SecondaryBtn = styled.button`
     margin-bottom: 64px;
     padding: 16px 24px;
     width: fit-content;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -161,23 +165,23 @@ export const SecondaryBtn = styled.button`
     margin-bottom: 40px;
     padding: 8px 16px;
     width: 100%;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 15px;
   }
 `
 
 export const ButtonBack = styled.div`
-  width: ${({ alt }) => alt ? '150px' : '262px'};
-  height: ${({ alt }) => alt ? '52px' : '64px'};
+  width: ${({ alt }) => alt ? '150px' : '210px'};
+  height: ${({ alt }) => alt ? '52px' : '52px'};
   border-radius: 50px;
-  font-size: ${({ alt }) => alt ? '20px' : '24px'};
+  font-size: ${({ alt }) => alt ? '18px' : '17px'};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
   color: #fff;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
+  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F2B15C 0%, #E17A52 100%)' : 'linear-gradient(270deg, #FFD98A 0%, #F0A93B 100%)'};
   cursor: pointer;
   transition: 0.5s ease;
   position: relative;
@@ -185,16 +189,16 @@ export const ButtonBack = styled.div`
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: ${({ alt }) => alt ? '150px' : '184px'};
-    height: ${({ alt }) => alt ? '52px' : '48px'};
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    width: ${({ alt }) => alt ? '150px' : '160px'};
+    height: ${({ alt }) => alt ? '52px' : '42px'};
+    font-size: ${({ alt }) => alt ? '18px' : '13px'};
     margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    height: 32px;
-    font-size: 14px;
+    height: 28px;
+    font-size: 12px;
     margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
   }
 `
@@ -209,10 +213,10 @@ export const ButtonFront = styled.button`
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #D65F42 0%, #F0A93B 100%)' : 'linear-gradient(270deg, #F0A93B 0%, #D65F42 100%)'};
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
-  font-size: ${({ alt }) => alt ? '20px' : '24px'};
+  font-size: ${({ alt }) => alt ? '18px' : '17px'};
   font-weight: 600;
   align-items: center;
   justify-content: center;
@@ -231,17 +235,17 @@ export const ButtonFront = styled.button`
   }
 
   &:disabled{
-    background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+    background: linear-gradient(270deg, #FFD98A 0%, #F0A93B 100%);
     opacity: 0.5;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    font-size: ${({ alt }) => alt ? '18px' : '13px'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
+    font-size: 12px;
   }
 `
 
@@ -253,7 +257,7 @@ export const LinkContainer = styled.div`
   padding: 8px;
 
   &:hover {
-    background-color: #212d45;
+    background-color: #2A2118;
     transform: scale(1.2);
     cursor: pointer;
   }

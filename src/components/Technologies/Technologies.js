@@ -7,45 +7,45 @@ const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Front-end to Back-end. 
-    </SectionText>
+<SectionText>
+  Here's a snapshot of the tools and technologies I use most, spanning AI & computer vision, front-end, and back-end development.
+</SectionText>
+
     <List>
+    <ListItem>
+        <picture>
+          <DiZend size="2.2rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>AI & Computer Vision</ListTitle>
+            <ListParagraph>
+              Experience with <br />
+              Deep Learning (2D/3D Segmentation), PyTorch, Open3D, Vedo, PyMeshLab, PyVita, Mesh Optimization, FHIR Integration, Medical Imaging Workflows
+            </ListParagraph>
+        </ListContainer>
+      </ListItem>
       <ListItem>
         <picture>
-          <DiReact size="3rem" />
+          <DiReact size="2.2rem" />
         </picture>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js, Next.js, Vue.js,Bootstrap, tailwind CSS
+             Experience with <br />
+            Flutter, React.js, Next.js, Vue.js, Tailwind CSS, Bootstrap, HTML, CSS, JavaScript, TypeScript
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <DiFirebase size="2.2rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+        <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js, ExpressJs, PHP, MySQL, MongoDB, PostgreSQL
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Languages</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            JavaScript, HTML/CSS, TypeScript,
-          </ListParagraph>
+            Node.js, Express.js, Django, Flask, Spring Boot, PHP, MySQL, MongoDB, PostgreSQL
+         </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
