@@ -6,8 +6,7 @@ const nextConfig = {
     styledComponents: true, // replaces babel-plugin-styled-components
   },
 
-  // If you are exporting a static site, you can still add this:
-  // output: 'export',
+  output: 'export',
 };
 
 module.exports = nextConfig;
